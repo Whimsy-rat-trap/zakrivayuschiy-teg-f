@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-    <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
@@ -60,7 +58,7 @@
           1 спринт: Я — чистый лист
         </h2>
         <div class="image-container">
-          <span class="label label_upper">&lt;/css&gt;</span>
+          <span class="label">&lt;/HTML&gt;</span>
           <img src="./images/image.png" alt="Фургон" class="image filter_grayscale"/>
         </div>
         <div class="description">
@@ -95,7 +93,7 @@
           1 спринт: А если не получится?
         </h2>
         <div class="image-container">
-          <span class="label">&lt;desigions&gt;</span>
+          <span class="label label_upper">&lt;css&gt;</span>
           <img src="./images/image.png" alt="Фургон" class="image filter_saturate"/>
         </div>
         <div class="description">
@@ -128,7 +126,7 @@
           2 спринт: Погоня за идеалом
         </h2>
         <div class="image-container">
-          <span class="label">&lt;/HTML&gt;</span>
+          <span class="label">&lt;desigions&gt;</span>
           <img src="./images/image.png" alt="Фургон" class="image filter_hue-rotate"/>
         </div>
         <div class="description">
@@ -163,7 +161,7 @@
           2 спринт: О тех, кто рядом
         </h2>
         <div class="image-container">
-          <span class="label">&lt;care&gt;</span>
+          <span class="label">care</span>
           <img src="./images/image.png" alt="Фургон" class="image filter__inversion"/>
         </div>
         <div class="description">
@@ -199,7 +197,7 @@
           3 спринт: Обходные стратегии
         </h2>
         <div class="image-container">
-          <span class="label">&lt;/HTML&gt;</span>
+          <span class="label">&lt;support&gt;</span>
           <img src="./images/image.png" alt="Фургон" class="image filter_sepia"/>
         </div>
         <div class="description">
@@ -232,7 +230,7 @@
           3 спринт: Когда опускаются руки
         </h2>
         <div class="image-container">
-          <span class="label">&lt;/HTML&gt;</span>
+          <span class="label">&lt;lifes-style: none;&gt;</span>
           <img src="./images/image.png" alt="Фургон" class="image filter_blur"/>
         </div>
         <div class="description">
@@ -267,7 +265,7 @@
           «Сейчас я здесь»
         </h2>
         <div class="image-container">
-          <span class="label">&lt;/HTML&gt;</span>
+          <span class="label">&lt;experience&gt;</span>
           <img src="./images/image.png" alt="Фургон" class="image filter__hue_opac"/>
         </div>
         <div class="description">
@@ -305,19 +303,22 @@
               onclick="window['floppy-dialog'].showModal()"
               aria-card__button__container="floppy-dialog"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
-          <use href="/svg/floppy.svg#save-icon"></use>
+        <svg
+				class="popup__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 39 39"
+        >
+          <use href="svg/floppy1.svg#save"></use>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text save_button-text_position">Сохранить на память</span>
       </button>
       <dialog class="popup" id="floppy-dialog">
         <svg
                 class="popup__icon"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 39 39"
         >
-          <use href="/svg/floppy.svg#save-icon"></use>
+          <use href="svg/floppy1.svg#save"></use>
         </svg>
         <p class="popup__text">Вставьте дискету, чтобы продолжить</p>
         <form class="popup__button" method="dialog">

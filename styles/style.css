@@ -153,16 +153,14 @@
 
 .save_button {
   display: flex;
-  gap: 8px;
   align-items: center;
   margin: 50px auto 0 auto;
-  padding: 15px 20px;
+  padding: 16px 0px 15px 12px;
+  width: 345px;
 }
 
 .save_button svg {
-  position: relative;
-  height: 21px;
-  mix-blend-mode: difference;
+	height: 21px;
 }
 
 .popup {
@@ -238,39 +236,43 @@
 @media (width <= 375px) {
   .header {
     width: 100%;
-    padding-block-start: 120px;
+    padding-block-start: 69px;
+	max-height: 329px;
+  }
+  
+  .header__logo {
+	margin-block-start: 47px;
+  }
+  
+  .header__title {
+	padding-block-start: 5px;
   }
 
   .card {
     width: 100vw;
   }
-
-  .save_button {
-    flex-direction: column;
-  }
-
-  .button_save svg {
-    block-size: 32px;
-  }
-
-  .popup {
-    inline-size: 100%;
-    padding: 30px 40px;
-  }
-}
-
-@media (width <= 375px) {
-  .header {
-    width: 100%;
-  }
-
-  .card {
-    width: 100%;
+  
+  .label {
+	inset-inline-end: 0;
+	padding-inline-end: 11px;
+	padding-block-start: 21px;
   }
 
   .save_button {
     flex-direction: column;
-  }
+	width: 310px;
+	padding-block-start: 12px;
+	}
+	
+	.save_button-text_position {
+		padding-inline-end: 13px;
+		padding-block-start: 10px;
+	}
+
+	.save_button svg {
+		height: 27px;
+		padding-inline-end: 13px;
+	}
 
   .button_save svg {
     block-size: 32px;
